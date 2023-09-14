@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'components/find_devices_screen.dart';
+
 import 'components/layout_provider.dart';
 
 class TopBar extends StatefulWidget {
@@ -40,28 +40,28 @@ class _TopBarState extends State<TopBar> {
             const SizedBox(
               width: 50,
             ),
-            GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) =>
-                          FindDevicesScreen()), // Replace FindDevicesScreen with the actual screen you want to navigate to
-                );
-              },
-              child: Container(
-                height: 44, // Adjust the height according to your needs
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(27),
-                  color: const Color(0xFFF3F3F3),
-                ),
-                child: const Icon(
-                  Icons.search,
-                  color: Colors.black,
-                ),
-              ),
-            ),
+            // GestureDetector(
+            //   onTap: () {
+            //     Navigator.push(
+            //       context,
+            //       MaterialPageRoute(
+            //           builder: (context) =>
+            //               FindDevicesScreen()), // Replace FindDevicesScreen with the actual screen you want to navigate to
+            //     );
+            //   },
+            //   child: Container(
+            //     height: 44, // Adjust the height according to your needs
+            //     padding: const EdgeInsets.symmetric(horizontal: 20),
+            //     decoration: BoxDecoration(
+            //       borderRadius: BorderRadius.circular(27),
+            //       color: const Color(0xFFF3F3F3),
+            //     ),
+            //     child: const Icon(
+            //       Icons.search,
+            //       color: Colors.black,
+            //     ),
+            //   ),
+            // ),
             GestureDetector(
               onTap: () {
                 // connects to device
